@@ -11,8 +11,14 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+blockquote {
     font-family: 'Roboto', sans-serif;
+}
+blockquote {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .title-teal {
@@ -121,4 +127,8 @@ footer.page-footer {
 .yt-iframe {
   height:90vh; 
   width: 100%;
+}
+.social i {
+  font-size: 2rem;
+  margin-right: 2rem
 }
