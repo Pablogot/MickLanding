@@ -1,90 +1,124 @@
 /* Custom Stylesheet */
+
 /**
  * Use this file to override Materialize files so you can update
  * the core Materialize files in the future
  *
  * Made By MaterializeCSS.com
  */
-h1, 
-h2, 
-h3, 
-h4, 
+
+h1,
+h2,
+h3,
+h4,
 h5 {
-  font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .title-teal {
-  color: #1de9c3
+    color: #1de9c3
 }
+
 .bold-plus {
-  font-weight: 900;
+    font-weight: 900;
 }
+
 .bold {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 .regular {
-  font-weight: 500;
+    font-weight: 500;
 }
 
 .light {
-  font-weight: 400;
+    font-weight: 400;
 }
+
 .thin {
-  font-weight: 300;
+    font-weight: 300;
 }
+
 .pt-l {
-  margin-top: 100px;
+    margin-top: 100px;
 }
+
 .pb-l {
-  margin-bottom: 100px;
+    margin-bottom: 100px;
 }
-nav ul a,
-nav .brand-logo {
+
+nav ul a {
   color: #444;
+}
+nav .brand-logo {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    color: #444;
+    font-size: 2rem;
+}
+nav .brand-logo span{
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 p {
-  line-height: 2rem;
+    line-height: 2rem;
 }
 
 .sidenav-trigger {
-  color: #26a69a;
+    color: #26a69a;
 }
 
 .parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255, 255, 255, .9);
 }
-  .parallax-container .section {
+
+.parallax-container .section {
     width: 100%;
-  }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
 }
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
+.parallax-container .section.reviews {
+    background-color: #00000094;
+}
+
+@media only screen and (max-width: 992px) {
+    .parallax-container .section {
+        position: absolute;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #index-banner .section {
+        top: 0;
+    }
 }
 
 .icon-block {
-  padding: 0 15px;
+    padding: 0 15px;
 }
+
 .icon-block .material-icons {
-  font-size: inherit;
+    font-size: inherit;
 }
 
 footer.page-footer {
-  margin: 0;
+    margin: 0;
+}
+
+.contact-details li {
+    margin-bottom: 10px
+}
+.contact-details i {
+  margin-right: 10px
+}
+
+.yt-iframe {
+  height:90vh; 
+  width: 100%;
 }
