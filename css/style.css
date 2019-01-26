@@ -155,7 +155,7 @@ iframe {
 }
 
 .sidenav-trigger {
-    color: #26a69a;
+    color: #444;
 }
 
 .parallax-container {
@@ -203,9 +203,6 @@ iframe {
       font-size: 1rem;
       width: 1rem;
       margin-right: 1rem;
-    }
-    .container, .full-h, .full-h-flex, .x-flex-around{
-      margin: 0;
     }
     .full-h-flex, .full-h, .ninety-h {
       height: auto !important;
