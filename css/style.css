@@ -199,6 +199,20 @@ iframe {
     nav .brand-logo span{
       font-size: .8rem;
     }
+    .x-contact-details i {
+      font-size: 1rem;
+      width: 1rem;
+      margin-right: 1rem;
+    }
+    .container, .full-h, .full-h-flex, .x-flex-around{
+      margin: 0;
+    }
+    .full-h-flex, .full-h, .ninety-h {
+      height: auto !important;
+    }
+    .x-flex-around{
+      width: 100% !important;
+    }
 }
 
 .icon-block {
