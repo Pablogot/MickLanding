@@ -15,34 +15,32 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,300i,400,500,700,900|Dancing+Script:400,700|Caveat:400,700"
     rel="stylesheet">
 </head>
-
 <body>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Mick Smith <span>Real Estate</span></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#about">About</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#about">About</a></li>
-        <li><a href="#reviews">Reviews</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-
-  <div id="index-banner" class="parallax-container pb-l">
+  <div class="navbar-fixed">
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">Mick Smith <span>Real Estate</span></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#index-banner">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="#index-banner">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+  <div id="index-banner" class="parallax-container full-h">
     <iframe class="yt-iframe" src="https://www.youtube.com/embed/Vrw9aAr2gaQ" frameborder="0" allowfullscreen></iframe>
   </div>
-
-
-  <div class="container pb-l" id="about">
+  <div class="container full-h-flex" id="about">
     <div class="section">
-
       <!--   Icon Section   -->
       <div class="row">
         <div class="col s12">
@@ -60,15 +58,16 @@
       </div>
     </div>
   </div>
-  <div class="parallax-container valign-wrapper" id="reviews">
+  <div class="parallax-container valign-wrapper full-h-flex" id="reviews">
     <div class="section reviews">
       <div class="container">
         <div class="row center">
           <div>
             <blockquote>
-              “There is no doubt, that when Mick Smith markets a property everybody knows about it. He’s marketing
-              style is by far his signature and furthermore it was this creative marketing that captured the
-              attention of the directors at Elders Real Estate Grafton.
+              “There is no doubt, that when Mick Smith markets a property everybody knows about it. <br /><br />
+              He’s marketing style is by far his signature and furthermore it was this creative marketing that captured
+              the
+              attention of the directors at Elders Real Estate Grafton.<br /><br />
               There certainly is a gift to making marketing work for you and there is no greater need for this, than
               when you are selling your greatest asset in a competitive.”
             </blockquote>
@@ -78,39 +77,49 @@
     </div>
     <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 3"></div>
   </div>
-
-  <div class="container pb-l" id="contact">
+  <div class="container ninety-h" id="contact">
     <div class="section">
 
       <div class="row valign-wrapper">
-        <div class="col s6 center ">
-          <img src="background2.jpg" style="width:80%; height:80%; padding: 10%;" class="circle responsive-img" alt="Unsplashed background img 2">
+        <div class="col l6 s12 center">
+          <img src="background2.jpg" class="circle responsive-img avatar-img" alt="Unsplashed background img 2">
         </div>
-        <div class="col s6 center">
+        <div class="col l6 s12 center">
           <h3><i class="mdi-content-send grey-text"></i></h3>
           <h4 class="left-align">Contact</h4>
-          <p class="left-align light">My name is Mick Smith im a real estate agent, sales guru, family guy.</p>
+          <p class="left-align light">Hi my name is Mick Smith im a real estate agent, sales guru, family guy.</p>
 
-          <div class="col s12 contact-details">
+          <div class="x-contact-details">
             <ul class="left-align no-pad-bot light">
-              <li class="valign-wrapper">
-                <a href="">
-                  <i class="fas fa-map-marked-alt"></i>
-                  Location: Snapper Rocks
+              <li>
+                <a class="black-text" href="">
+                  <i class="teal-text text-lighten-4 fas fa-map-marked-alt"></i>
+                  Snapper Rocks
                 </a>
               </li>
-              <li class="valign-wrapper">
-                <a href="">
-                  <i class="fas fa-envelope"></i>
-                  Email: michaelsmith@langlandsproperty.com.au
+              <li>
+                <a class="black-text" href="">
+                  <i class="teal-text text-lighten-4 fas fa-envelope"></i>
+                  mick.smith@eldersrealestate.com.au
                 </a>
               </li>
-              <li class="valign-wrapper">
-                <a href="">
-                  <i class="fas fa-mobile"></i>
-                  Mobile: +61 403 136 602
+              <li>
+                <a class="black-text" href="">
+                  <i class="teal-text text-lighten-4 fas fa-mobile"></i>
+                  +61 402 865 600
                 </a>
-
+              </li>
+              <li>
+                <a class="black-text" href="http://www.facebook.com/MickSmithRealestate/">
+                  <i class="teal-text text-lighten-4 fab fa-facebook-f"></i>
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a class="black-text" href="http://www.instagram.com/micksmithlanglandsproperty/">
+                  <i class="teal-text text-lighten-4 fab fa-instagram"></i>
+                  Instagram
+                </a>
               </li>
             </ul>
           </div>
@@ -119,33 +128,13 @@
     </div>
   </div>
   <footer class="page-footer grey">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Footer Content</h5>
-          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-        </div>
-        <div class="col l4 offset-l2 s12 social">
-          <h5 class="white-text">Get Social:</h5>
-          <div class="valign-wrapper">
-            <a class="teal-text text-lighten-4" href="http://www.facebook.com/MickSmithRealestate/">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a class="teal-text text-lighten-4" href="http://www.instagram.com/micksmithlanglandsproperty/">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="footer-copyright">
-      <div class="container">
-        © 2019<a class="grey-text text-lighten-3">Pablo LLanos</a>
+      <div class="container x-flex-around">
+        <div>© 2019 <a class="grey-text text-lighten-3">Mick Smith</a></div>
+        <div>Built by: <a class="grey-text text-lighten-3"> Pablo Llanos</a></div>
       </div>
     </div>
   </footer>
-
-
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>

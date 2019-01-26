@@ -1,11 +1,8 @@
-/* Custom Stylesheet */
-
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
+/* Custom Styles */
+/* basic text */
+p {
+  line-height: 2rem;
+}
 
 h1,
 h2,
@@ -45,31 +42,116 @@ blockquote {
 .thin {
     font-weight: 300;
 }
-
-.pt-l {
-    margin-top: 100px;
+.full-h{
+  height: 100vh !important;
+}
+.full-h-flex{
+  height: 100vh !important;
+  display: flex !important;
+  align-items: center !important;
+}
+.ninety-h {
+  height: 90vh !important;
+  display: flex !important;
+  align-items: center !important;
+}
+/* nav */
+nav ul li a {
+  color: #9e9e9e !important;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover, nav ul li a:active {
+  color: #323232 !important;
 }
 
-.pb-l {
-    margin-bottom: 100px;
-}
+nav ul a:hover {
+  background-color: transparent !important;
 
-nav ul a {
-  color: #444;
 }
 nav .brand-logo {
-    font-family: 'Dancing Script', cursive;
-    font-weight: 700;
+    /* font-family: 'Dancing Script', cursive; */
     color: #444;
     font-size: 2rem;
 }
 nav .brand-logo span{
   font-weight: 400;
   font-size: 1.5rem;
+  color: #ee6e73;
 }
 
-p {
-    line-height: 2rem;
+
+/* nav stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+/* Iframe wrapper that allows to make youtube iframe responsive */
+.iframe-wrapper {
+  position: relative;
+  height: 0;
+  max-width: 400px;
+}
+
+/* Responsive iframe styles */
+iframe {
+  position: absolute;
+}
+
+/* Adding pseudo element to iframe parent */
+.iframe-wrapper:after {
+  content: '';
+  position: absolute;
+
+  z-index: 1;
+  display: block;
+}
+
+/* Adding hover effect to pseudo element */
+.iframe-wrapper:hover:after {
+  content: none;
 }
 
 .sidenav-trigger {
@@ -98,38 +180,61 @@ p {
     #index-banner .section {
         top: 10%;
     }
+  nav .brand-logo {
+    font-size: 1.3rem;
+  }
+  nav .brand-logo span{
+    font-size: 1rem;
+  }
+  
 }
 
 @media only screen and (max-width: 600px) {
     #index-banner .section {
         top: 0;
     }
+    nav .brand-logo {
+      font-size: 1rem;
+    }
+    nav .brand-logo span{
+      font-size: .8rem;
+    }
 }
 
 .icon-block {
     padding: 0 15px;
 }
-
+.avatar-img{
+  padding: 2rem;
+  margin-right: 5rem;
+}
 .icon-block .material-icons {
     font-size: inherit;
 }
 
 footer.page-footer {
-    margin: 0;
+  margin: 0;
 }
-
-.contact-details li {
-    margin-bottom: 10px
+.x-flex-around{
+  width: 100vw !important;
+  display: inline-flex;
+  justify-content: space-between;
 }
-.contact-details i {
-  margin-right: 10px
+.x-contact-details{
+  margin-top: 2rem;
+}
+.x-contact-details li {
+  display: flex;
+  align-content: center;
+  margin-bottom: 2rem;
+}
+.x-contact-details i {
+  font-size: 2rem;
+  width: 2rem;
+  margin-right: 2rem;
 }
 
 .yt-iframe {
   height:90vh; 
   width: 100%;
-}
-.social i {
-  font-size: 2rem;
-  margin-right: 2rem
 }
