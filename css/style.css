@@ -1,7 +1,9 @@
 /* Custom Styles */
+
 /* basic text */
+
 p {
-  line-height: 2rem;
+    line-height: 2rem;
 }
 
 h1,
@@ -12,11 +14,12 @@ h5,
 blockquote {
     font-family: 'Roboto', sans-serif;
 }
+
 blockquote {
-  font-family: 'Caveat', cursive;
-  font-weight: bold;
-  font-size: 2rem;
-  line-height: 2rem;
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2rem;
 }
 
 .title-teal {
@@ -42,116 +45,132 @@ blockquote {
 .thin {
     font-weight: 300;
 }
-.full-h{
-  height: 100vh !important;
+
+.full-h {
+    height: 100vh !important;
 }
-.full-h-flex{
-  height: 100vh !important;
-  display: flex !important;
-  align-items: center !important;
+
+.full-h-flex {
+    height: 100vh !important;
+    display: flex !important;
+    align-items: center !important;
 }
+
 .ninety-h {
-  height: 90vh !important;
-  display: flex !important;
-  align-items: center !important;
+    height: 90vh !important;
+    display: flex !important;
+    align-items: center !important;
 }
+
 /* nav */
+
 nav ul li a {
-  color: #9e9e9e !important;
+    color: #9e9e9e !important;
 }
+
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
-  transition: all .5s;
+    transition: all .5s;
 }
-nav ul li a:hover, nav ul li a:active {
-  color: #323232 !important;
+
+nav ul li a:hover,
+nav ul li a:active {
+    color: #323232 !important;
 }
 
 nav ul a:hover {
-  background-color: transparent !important;
-
+    background-color: transparent !important;
 }
+
 nav .brand-logo {
     /* font-family: 'Dancing Script', cursive; */
     color: #444;
     font-size: 2rem;
 }
-nav .brand-logo span{
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: #ee6e73;
-}
 
+nav .brand-logo span {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #ee6e73;
+}
 
 /* nav stroke */
+
 nav.stroke ul li a,
 nav.fill ul li a {
-  position: relative;
+    position: relative;
 }
+
 nav.stroke ul li a:after,
 nav.fill ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: #aaa;
-  height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
 }
+
 nav.stroke ul li a:hover:after {
-  width: 100%;
+    width: 100%;
 }
 
 nav.fill ul li a {
-  transition: all 2s;
+    transition: all 2s;
 }
 
 nav.fill ul li a:after {
-  text-align: left;
-  content: '.';
-  margin: 0;
-  opacity: 0;
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
 }
+
 nav.fill ul li a:hover {
-  color: #fff;
-  z-index: 1;
+    color: #fff;
+    z-index: 1;
 }
+
 nav.fill ul li a:hover:after {
-  z-index: -10;
-  animation: fill 1s forwards;
-  -webkit-animation: fill 1s forwards;
-  -moz-animation: fill 1s forwards;
-  opacity: 1;
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
 }
 
 /* Iframe wrapper that allows to make youtube iframe responsive */
+
 .iframe-wrapper {
-  position: relative;
-  height: 0;
-  max-width: 400px;
+    position: relative;
+    height: 0;
+    max-width: 400px;
 }
 
 /* Responsive iframe styles */
+
 iframe {
-  position: absolute;
+    position: absolute;
 }
 
 /* Adding pseudo element to iframe parent */
-.iframe-wrapper:after {
-  content: '';
-  position: absolute;
 
-  z-index: 1;
-  display: block;
+.iframe-wrapper:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    display: block;
 }
 
 /* Adding hover effect to pseudo element */
+
 .iframe-wrapper:hover:after {
-  content: none;
+    content: none;
 }
 
 .sidenav-trigger {
@@ -180,76 +199,89 @@ iframe {
     #index-banner .section {
         top: 10%;
     }
-  nav .brand-logo {
-    font-size: 1.3rem;
-  }
-  nav .brand-logo span{
-    font-size: 1rem;
-  }
-  
+    nav .brand-logo {
+        font-size: 1.3rem;
+    }
+    nav .brand-logo span {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width: 600px) {
+    .x-hide-large {
+        display: hidden;
+    }
     #index-banner .section {
         top: 0;
     }
     nav .brand-logo {
-      font-size: 1rem;
+        font-size: 1rem;
     }
-    nav .brand-logo span{
-      font-size: .8rem;
+    nav .brand-logo span {
+        font-size: .8rem;
     }
     .x-contact-details i {
-      font-size: 1rem;
-      width: 1rem;
-      margin-right: 1rem;
+        font-size: 1rem;
+        width: 1rem;
+        margin-right: 1rem;
     }
-    .container, .full-h, .full-h-flex, .x-flex-around{
-      margin: 0;
+    .container,
+    .full-h,
+    .full-h-flex,
+    .x-flex-around {
+        margin: 0;
     }
-    .full-h-flex, .full-h, .ninety-h {
-      height: auto !important;
+    .full-h-flex,
+    .full-h,
+    .ninety-h {
+        height: auto !important;
     }
-    .x-flex-around{
-      width: 100% !important;
+    .x-flex-around {
+        width: 100% !important;
     }
 }
 
 .icon-block {
     padding: 0 15px;
 }
-.avatar-img{
-  padding: 2rem;
-  margin-right: 5rem;
+
+.avatar-img {
+    padding: 2rem;
+    margin-right: 5rem;
 }
+
 .icon-block .material-icons {
     font-size: inherit;
 }
 
 footer.page-footer {
-  margin: 0;
+    margin: 0;
 }
-.x-flex-around{
-  width: 100vw !important;
-  display: inline-flex;
-  justify-content: space-between;
+
+.x-flex-around {
+    width: 100vw !important;
+    display: inline-flex;
+    justify-content: space-between;
 }
-.x-contact-details{
-  margin-top: 2rem;
+
+.x-contact-details {
+    margin-top: 2rem;
 }
+
 .x-contact-details li {
-  display: flex;
-  align-content: center;
-  margin-bottom: 2rem;
+    display: flex;
+    align-content: center;
+    margin-bottom: 2rem;
 }
+
 .x-contact-details i {
-  color: #ee6e73;
-  font-size: 2rem;
-  width: 2rem;
-  margin-right: 2rem;
+    color: #ee6e73;
+    font-size: 2rem;
+    width: 2rem;
+    margin-right: 2rem;
 }
 
 .yt-iframe {
-  height:90vh; 
-  width: 100%;
+    height: 90vh;
+    width: 100%;
 }
