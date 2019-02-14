@@ -209,7 +209,7 @@ iframe {
 
 @media only screen and (max-width: 600px) {
     .x-hide-large {
-        display: hidden;
+        display: none;
     }
     #index-banner .section {
         top: 0;
